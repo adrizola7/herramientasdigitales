@@ -1,0 +1,100 @@
+baseURL = 'https://herramientasdigitales.netlify.app/'
+locale = 'es'
+title = 'Herramientas Digitales'
+theme = 'PaperMod'
+paginate = 10
+
+[params]
+  env = 'production'
+  description = 'Reseñas, comparativas y guías de las mejores herramientas digitales, software SaaS y apps de productividad.'
+  author = 'Herramientas Digitales'
+  defaultTheme = 'auto'
+  ShowShareButtons = false
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  disableSpecial1stPost = false
+  hidemeta = false
+  hideSummary = false
+  hideToc = false
+  showtoc = true
+  tocopen = true
+  comments = false
+  dateFormat = '2 de enero, 2006'
+  images = ['logo.png']
+
+  [params.homeInfoParams]
+    Title = 'Herramientas Digitales'
+    Content = 'Reseñas honestas y comparativas de las mejores herramientas digitales, software SaaS y apps de productividad para potenciar tu trabajo.'
+
+  [[params.socialIcons]]
+    name = 'email'
+    url = 'mailto:contacto@herramientasdigitales.net'
+
+  [params.assets]
+    disableFingerprinting = true
+    favicon = '/favicon.ico'
+
+  [params.label]
+    text = 'Herramientas Digitales'
+    icon = '💻'
+
+  [params.cover]
+    hidden = false
+    hiddenInList = false
+    hiddenInSingle = false
+
+[menu]
+  [[menu.main]]
+    identifier = 'herramientas'
+    name = 'Herramientas'
+    url = '/herramientas/'
+    weight = 10
+  [[menu.main]]
+    identifier = 'comparativas'
+    name = 'Comparativas'
+    url = '/comparativas/'
+    weight = 20
+  [[menu.main]]
+    identifier = 'guias'
+    name = 'Guías'
+    url = '/guias/'
+    weight = 30
+  [[menu.main]]
+    identifier = 'about'
+    name = 'Sobre nosotros'
+    url = '/about/'
+    weight = 40
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON']
+
+[sitemap]
+  changefreq = 'weekly'
+  filename = 'sitemap.xml'
+  priority = 0.5
+
+[minify]
+  disableCSS = false
+  disableHTML = false
+  disableJS = false
+  disableSVG = false
+  keepComments = false
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = false
+    noClasses = true
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2

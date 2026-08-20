@@ -1,0 +1,12 @@
+{{- if .IsHome }}
+<footer class="footer" style="text-align: center; padding: 20px 0; margin-top: 40px; border-top: 1px solid #eee; font-size: 0.9em; color: #666;">
+  <p>&copy; {{ now.Year }} {{ .Site.Title }}. Todos los derechos reservados.</p>
+  <p style="margin-top: 8px;">
+    <a href="/legal/privacidad/" style="color: #666; margin: 0 8px;">Privacidad</a> |
+    <a href="/legal/afiliados/" style="color: #666; margin: 0 8px;">Afiliados</a> |
+    <a href="/about/" style="color: #666; margin: 0 8px;">Sobre nosotros</a> |
+    <a href="/sitemap.xml" style="color: #666; margin: 0 8px;">Sitemap</a>
+  </p>
+  <p style="margin-top: 8px; font-size: 0.85em;">Este sitio contiene enlaces de afiliado. <a href="/legal/afiliados/" style="color: #666;">Más información</a></p>
+</footer>
+{{- end }}

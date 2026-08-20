@@ -1,0 +1,22 @@
+# Digitales
+# Hugo build output
+public/
+resources/_gen/
+
+# Hugo temporary files
+.hugo_build.lock
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+
+# Node
+node_modules/
+
+# Logs
+*.log

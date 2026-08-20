@@ -1,0 +1,6 @@
+<div class="affiliate-box" style="border: 2px solid #0078d4; border-radius: 8px; padding: 16px; margin: 20px 0; background: #f8f9fa;">
+  <p style="margin: 0 0 8px 0;"><strong>{{ .Get "nombre" }}</strong></p>
+  {{ if .Get "precio" }}<p style="margin: 0 0 8px 0; color: #28a745; font-weight: bold;">Precio: {{ .Get "precio" }}</p>{{ end }}
+  <a href="{{ .Get "url" }}" target="_blank" rel="nofollow noopener sponsored" style="display: inline-block; background: #0078d4; color: white; padding: 8px 16px; border-radius: 4px; text-decoration: none; font-weight: bold;">Ver oferta →</a>
+  <p style="margin: 8px 0 0 0; font-size: 0.85em; color: #666;">Enlace de afiliado</p>
+</div>
