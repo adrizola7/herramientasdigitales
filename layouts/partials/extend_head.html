@@ -62,4 +62,46 @@ img { border-radius: 8px; }
 .logo-switches { display: none !important; }
 #theme-toggle { display: none !important; }
 </style>
+<script>
+(function() {
+    /* === MENÚ HAMBURGUESA === */
+    var toggle = document.getElementById('menuToggle');
+    var menu = document.getElementById('menu');
+    if (toggle && menu) {
+        toggle.addEventListener('click', function(e) {
+            e.stopPropagation();
+            var isOpen = menu.classList.toggle('menu-open');
+            toggle.classList.toggle('active', isOpen);
+            toggle.setAttribute('aria-expanded', isOpen);
+        });
+
+        /* Cerrar menú al hacer clic en un enlace */
+        var links = menu.querySelectorAll('a');
+        for (var i = 0; i < links.length; i++) {
+            links[i].addEventListener('click', function() {
+                menu.classList.remove('menu-open');
+                toggle.classList.remove('active');
+                toggle.setAttribute('aria-expanded', 'false');
+            });
+        }
+
+        /* Cerrar menú al hacer clic fuera */
+        document.addEventListener('click', function(e) {
+            if (!toggle.contains(e.target) && !menu.contains(e.target)) {
+                menu.classList.remove('menu-open');
+                toggle.classList.remove('active');
+                toggle.setAttribute('aria-expanded', 'false');
+            }
+        });
+    }
+
+    /* === TOC: auto-cerrar en móvil === */
+    if (window.innerWidth <= 768) {
+        var tocDetails = document.querySelectorAll('details.toc');
+        for (var j = 0; j < tocDetails.length; j++) {
+            tocDetails[j].removeAttribute('open');
+        }
+    }
+})();
+</script>
 {{- /* Head custom content area end */ -}}
