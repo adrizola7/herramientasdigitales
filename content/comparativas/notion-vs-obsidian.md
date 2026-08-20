@@ -1,11 +1,14 @@
 ---
 title: "Notion vs Obsidian: ¿Cuál elegir en 2026?"
-description: "Comparativa completa entre Notion y Obsidian. Analizamos funcionalidades, precios, rendimiento y cuál se adapta mejor a tus necesidades."
+description: "Comparativa completa entre Notion y Obsidian: funcionalidades, precios, rendimiento, privacidad y cuál se adapta mejor a tus necesidades de productividad."
 date: 2026-08-18
 draft: false
 categories: ["Comparativas"]
 tags: ["Notion", "Obsidian", "comparativa", "productividad"]
+images: ["/images/notion-vs-obsidian.svg"]
 ---
+
+> **Divulgación:** Este artículo contiene enlaces de afiliado. Si compras a través de ellos, recibimos una pequeña comisión **sin coste adicional** para ti.
 
 ¿Notion u Obsidian? Es una de las preguntas más frecuentes en el mundo de la productividad. Ambas son herramientas potentes pero con filosofías muy diferentes. Vamos a analizarlas en profundidad.
 

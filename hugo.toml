@@ -6,7 +6,7 @@ paginate = 10
 
 [params]
   env = 'production'
-  description = 'Reseñas honestas y comparativas de las mejores herramientas digitales, software SaaS y apps de productividad.'
+  description = 'Reseñas honestas y comparativas de las mejores herramientas digitales, software SaaS y apps de productividad para potenciar tu trabajo.'
   author = 'Herramientas Digitales'
   defaultTheme = 'dark'
   ShowShareButtons = false
@@ -26,6 +26,7 @@ paginate = 10
   comments = false
   dateFormat = '2 de enero, 2006'
   images = ['logo.png']
+  ShowSearch = true
 
   [params.homeInfoParams]
     Title = 'Herramientas Digitales'
@@ -66,10 +67,15 @@ paginate = 10
     url = '/guias/'
     weight = 30
   [[menu.main]]
+    identifier = 'search'
+    name = 'Buscar'
+    url = '/search/'
+    weight = 40
+  [[menu.main]]
     identifier = 'about'
     name = 'Sobre nosotros'
     url = '/about/'
-    weight = 40
+    weight = 50
 
 [outputs]
   home = ['HTML', 'RSS', 'JSON']

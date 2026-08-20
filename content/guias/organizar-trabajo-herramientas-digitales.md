@@ -1,11 +1,14 @@
 ---
 title: "Cómo Organizar tu Trabajo con Herramientas Digitales: Guía Paso a Paso"
-description: "Guía completa para organizar tu productividad diaria usando herramientas digitales gratuitas y de pago. Desde cero hasta un sistema profesional."
+description: "Guía completa para organizar tu productividad diaria con herramientas digitales. Método GTD, Pomodoro, automatización y las mejores apps gratuitas y de pago."
 date: 2026-08-15
 draft: false
 categories: ["Guías"]
 tags: ["productividad", "organización", "guía", "herramientas digitales"]
+images: ["/images/organizar-trabajo.svg"]
 ---
+
+> **Divulgación:** Este artículo contiene enlaces de afiliado. Si compras a través de ellos, recibimos una pequeña comisión **sin coste adicional** para ti.
 
 Organizar el trabajo no se trata de tener más disciplina, sino de tener el **sistema correcto**. En esta guía te monto un sistema de productividad completo desde cero, con herramientas gratuitas y de pago.
 

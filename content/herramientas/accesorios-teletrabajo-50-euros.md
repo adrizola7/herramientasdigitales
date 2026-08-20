@@ -1,11 +1,14 @@
 ---
 title: "5 Accesorios Esenciales para Teletrabajo por Menos de 50€"
-description: "Los mejores accesorios baratos para montar tu espacio de teletrabajo. Todo por menos de 50€ con envío Prime."
+description: "Los mejores accesorios baratos para montar tu espacio de teletrabajo: teclados, ratones, webcams y más. Todo por menos de 50€ con envío Prime."
 date: 2026-08-20
 draft: false
 categories: ["Herramientas"]
 tags: ["teletrabajo", "oficina", "accesorios", "baratos"]
+images: ["/images/accesorios-teletrabajo.svg"]
 ---
+
+> **Divulgación:** Este artículo contiene enlaces de afiliado de Amazon. Si compras a través de ellos, recibimos una pequeña comisión **sin coste adicional** para ti.
 
 No necesitas gastar una fortuna para montar un buen espacio de teletrabajo. Estos 5 accesorios mejoran tu productividad sin pasar de 50€.
 
