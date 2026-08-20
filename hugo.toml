@@ -37,7 +37,8 @@ paginate = 10
 
   [params.assets]
     disableFingerprinting = true
-    favicon = '/favicon.ico'
+    favicon = '/favicon.svg'
+    customCSS = ['/css/custom.css']
 
   [params.label]
     text = 'Herramientas Digitales'
