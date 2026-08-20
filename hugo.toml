@@ -6,9 +6,9 @@ paginate = 10
 
 [params]
   env = 'production'
-  description = 'Reseñas, comparativas y guías de las mejores herramientas digitales, software SaaS y apps de productividad.'
+  description = 'Reseñas honestas y comparativas de las mejores herramientas digitales, software SaaS y apps de productividad.'
   author = 'Herramientas Digitales'
-  defaultTheme = 'auto'
+  defaultTheme = 'light'
   ShowShareButtons = false
   ShowReadingTime = true
   ShowPostNavLinks = true
@@ -18,7 +18,7 @@ paginate = 10
   ShowRssButtonInSectionTermList = true
   UseHugoToc = true
   disableSpecial1stPost = false
-  hidemeta = false
+  hidemeta = true
   hideSummary = false
   hideToc = false
   showtoc = true
@@ -42,12 +42,12 @@ paginate = 10
 
   [params.label]
     text = 'Herramientas Digitales'
-    icon = '💻'
+    icon = ''
 
   [params.cover]
-    hidden = false
-    hiddenInList = false
-    hiddenInSingle = false
+    hidden = true
+    hiddenInList = true
+    hiddenInSingle = true
 
 [menu]
   [[menu.main]]
