@@ -1,4 +1,4 @@
-baseURL = 'https://herramientasdigitales.netlify.app/'
+baseURL = 'https://adrizola7.github.io/herramientasdigitales/'
 locale = 'es'
 title = 'Herramientas Digitales'
 theme = 'PaperMod'
