@@ -1,5 +1,5 @@
 <div class="affiliate-box">
-  {{ if .Get "imagen" }}<div class="affiliate-img"><img src="{{ .Get "imagen" }}" alt="{{ .Get "nombre" }}"></div>{{ end }}
+  {{ if .Get "imagen" }}<div class="affiliate-img"><img src="{{ .Get "imagen" | strings.TrimPrefix "/" | relURL }}" alt="{{ .Get "nombre" }}"></div>{{ end }}
   <div class="affiliate-body">
     <p class="affiliate-name">{{ .Get "nombre" }}</p>
     {{ if .Get "precio" }}<p class="affiliate-price">{{ .Get "precio" }}</p>{{ end }}

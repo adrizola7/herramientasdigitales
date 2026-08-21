@@ -43,7 +43,7 @@
     <a href="{{ .Permalink }}" class="home-article-card">
       {{ with .Params.images }}
       <div class="home-article-image">
-        <img src="{{ index . 0 }}" alt="{{ $.Title }}">
+        <img src="{{ index . 0 | strings.TrimPrefix "/" | relURL }}" alt="{{ $.Title }}">
       </div>
       {{ else }}
       <div class="home-article-image" aria-hidden="true">📝</div>

@@ -6,7 +6,7 @@
       <div>
         <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
           {{- if site.Params.label.icon }}
-          <img src="{{ site.Params.label.icon | absURL }}" alt="" style="height:38px;border-radius:8px;">
+          <img src="{{ site.Params.label.icon | strings.TrimPrefix "/" | relURL }}" alt="" style="height:38px;border-radius:8px;">
           {{- end }}
           <span style="font-weight:800;font-size:1.05rem;color:var(--text);letter-spacing:-.02em;">Soft Kuro<span style="color:var(--accent);"> Technology</span></span>
         </div>

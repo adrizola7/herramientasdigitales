@@ -18,7 +18,7 @@
 <a href="{{ .Permalink }}" class="sk-card">
   <div class="sk-card-img">
     {{- with .Params.images }}
-    <img src="{{ index . 0 }}" alt="{{ $.Title }}">
+    <img src="{{ index . 0 | strings.TrimPrefix "/" | relURL }}" alt="{{ $.Title }}">
     {{- else }}
     <div class="sk-card-img-placeholder"></div>
     {{- end }}
