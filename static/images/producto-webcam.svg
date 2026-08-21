@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 80" fill="none">
+  <rect width="120" height="80" rx="12" fill="#0f1117"/>
+  <rect x="30" y="18" width="60" height="40" rx="8" fill="#1e2030" stroke="#4f8cff" stroke-width="1.5"/>
+  <circle cx="60" cy="38" r="10" fill="none" stroke="#4f8cff" stroke-width="1.5" opacity=".7"/>
+  <circle cx="60" cy="38" r="4" fill="#4f8cff" opacity=".5"/>
+  <rect x="50" y="58" width="20" height="4" rx="2" fill="#1e2030" stroke="#4f8cff" stroke-width="1" opacity=".5"/>
+  <text x="60" y="72" text-anchor="middle" fill="#6b7288" font-size="7" font-family="Inter,sans-serif">WEBCAM</text>
+</svg>

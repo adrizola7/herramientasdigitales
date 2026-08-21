@@ -1,10 +1,69 @@
 <footer class="footer">
-  <p>&copy; {{ now.Year }} {{ .Site.Title }}. Todos los derechos reservados.</p>
-  <p>
-    <a href="/legal/privacidad/">Privacidad</a> ·
-    <a href="/legal/afiliados/">Afiliados</a> ·
-    <a href="/about/">Sobre nosotros</a> ·
-    <a href="/sitemap.xml">Sitemap</a>
-  </p>
-  <p style="font-size: 0.8rem; opacity: 0.5;">Este sitio contiene enlaces de afiliado · <a href="/legal/afiliados/">Más información</a></p>
+  <div style="max-width:1160px;margin:0 auto;padding:0 24px;">
+
+    <div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:48px;">
+
+      <div>
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+          {{- if site.Params.label.icon }}
+          <img src="{{ site.Params.label.icon | absURL }}" alt="" style="height:38px;border-radius:8px;">
+          {{- end }}
+          <span style="font-weight:800;font-size:1.05rem;color:var(--text);letter-spacing:-.02em;">Soft Kuro<span style="color:var(--accent);"> Technology</span></span>
+        </div>
+        <p style="max-width:300px;">Reseñas independientes de tecnología y herramientas digitales. Probamos todo antes de recomendarlo, para que tú decidas con datos.</p>
+        <div style="display:flex;gap:10px;margin-top:20px;">
+          <a href="https://x.com" target="_blank" rel="noopener" aria-label="X (Twitter)" style="width:38px;height:38px;display:flex;align-items:center;justify-content:center;border:1px solid var(--border);border-radius:10px;color:var(--text-muted);transition:border-color .2s,color .2s,transform .2s;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube" style="width:38px;height:38px;display:flex;align-items:center;justify-content:center;border:1px solid var(--border);border-radius:10px;color:var(--text-muted);transition:border-color .2s,color .2s,transform .2s;">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.55 12 3.55 12 3.55s-7.5 0-9.38.5A3.02 3.02 0 0 0 .5 6.19C0 8.07 0 12 0 12s0 3.93.5 5.81a3.02 3.02 0 0 0 2.12 2.14c1.88.5 9.38.5 9.38.5s7.5 0 9.38-.5a3.02 3.02 0 0 0 2.12-2.14C24 15.93 24 12 24 12s0-3.93-.5-5.81zM9.55 15.57V8.43L15.82 12z"/></svg>
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram" style="width:38px;height:38px;display:flex;align-items:center;justify-content:center;border:1px solid var(--border);border-radius:10px;color:var(--text-muted);transition:border-color .2s,color .2s,transform .2s;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85C2.38 3.92 3.9 2.38 7.15 2.23 8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 2.7.27.27 2.69.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.2 4.36 2.62 6.78 6.98 6.98 1.28.06 1.69.07 4.95.07s3.67-.01 4.95-.07c4.35-.2 6.78-2.62 6.98-6.98.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95C23.73 2.7 21.31.27 16.95.07 15.67.01 15.26 0 12 0zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84zM12 16a4 4 0 1 1 4-4 4 4 0 0 1-4 4zm6.41-11.85a1.44 1.44 0 1 0 1.44 1.44 1.44 1.44 0 0 0-1.44-1.44z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h4 style="font-size:.8rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--text);margin-bottom:18px;">Herramientas</h4>
+        <ul style="list-style:none;padding:0;">
+          <li style="margin-bottom:11px;"><a href="/herramientas/" style="font-size:.88rem;color:var(--text-muted);transition:color .2s;">ChatGPT</a></li>
+          <li style="margin-bottom:11px;"><a href="/herramientas/" style="font-size:.88rem;color:var(--text-muted);transition:color .2s;">Claude</a></li>
+          <li style="margin-bottom:11px;"><a href="/herramientas/" style="font-size:.88rem;color:var(--text-muted);transition:color .2s;">Perplexity</a></li>
+          <li style="margin-bottom:11px;"><a href="/herramientas/" style="font-size:.88rem;color:var(--text-muted);transition:color .2s;">Notion AI</a></li>
+          <li style="margin-bottom:11px;"><a href="/herramientas/" style="font-size:.88rem;color:var(--text-muted);transition:color .2s;">Canva</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 style="font-size:.8rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--text);margin-bottom:18px;">Compañía</h4>
+        <ul style="list-style:none;padding:0;">
+          <li style="margin-bottom:11px;"><a href="/about/" style="font-size:.88rem;color:var(--text-muted);transition:color .2s;">Sobre nosotros</a></li>
+          <li style="margin-bottom:11px;"><a href="/comparativas/" style="font-size:.88rem;color:var(--text-muted);transition:color .2s;">Comparativas</a></li>
+          <li style="margin-bottom:11px;"><a href="/guias/" style="font-size:.88rem;color:var(--text-muted);transition:color .2s;">Guías</a></li>
+          <li style="margin-bottom:11px;"><a href="mailto:contacto.softkuro@gmail.com" style="font-size:.88rem;color:var(--text-muted);transition:color .2s;">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 style="font-size:.8rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--text);margin-bottom:18px;">Legal</h4>
+        <ul style="list-style:none;padding:0;">
+          <li style="margin-bottom:11px;"><a href="/legal/privacidad/" style="font-size:.88rem;color:var(--text-muted);transition:color .2s;">Privacidad</a></li>
+          <li style="margin-bottom:11px;"><a href="/legal/afiliados/" style="font-size:.88rem;color:var(--text-muted);transition:color .2s;">Aviso de afiliados</a></li>
+          <li style="margin-bottom:11px;"><a href="/sitemap.xml" style="font-size:.88rem;color:var(--text-muted);transition:color .2s;">Sitemap</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div style="border-top:1px solid var(--border);padding-top:26px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;">
+      <p style="font-size:.76rem;color:var(--text-faint);max-width:680px;line-height:1.6;">
+        <strong style="color:var(--text-muted);">Aviso de afiliados:</strong> algunos enlaces de esta página son enlaces de afiliado.
+        Si compras a través de ellos, podemos recibir una comisión sin coste adicional para ti.
+        Esto nunca afecta a nuestras valoraciones ni al orden de nuestras recomendaciones.
+      </p>
+      <span style="font-size:.76rem;color:var(--text-faint);white-space:nowrap;">&copy; {{ now.Year }} {{ .Site.Title }}</span>
+    </div>
+
+  </div>
 </footer>

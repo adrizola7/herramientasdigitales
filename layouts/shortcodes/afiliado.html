@@ -1,6 +1,9 @@
 <div class="affiliate-box">
-  <p>{{ .Get "nombre" }}</p>
-  {{ if .Get "precio" }}<p>{{ .Get "precio" }}</p>{{ end }}
-  <a href="{{ .Get "url" }}" target="_blank" rel="nofollow noopener sponsored">Ver oferta</a>
-  <p>Enlace de afiliado</p>
+  {{ if .Get "imagen" }}<div class="affiliate-img"><img src="{{ .Get "imagen" }}" alt="{{ .Get "nombre" }}"></div>{{ end }}
+  <div class="affiliate-body">
+    <p class="affiliate-name">{{ .Get "nombre" }}</p>
+    {{ if .Get "precio" }}<p class="affiliate-price">{{ .Get "precio" }}</p>{{ end }}
+    <a href="{{ .Get "url" }}" target="_blank" rel="nofollow noopener sponsored">{{ if .Get "texto" }}{{ .Get "texto" }}{{ else }}Ver oferta{{ end }}</a>
+    <p class="affiliate-disclaimer">Enlace de afiliado</p>
+  </div>
 </div>

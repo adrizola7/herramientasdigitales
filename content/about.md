@@ -1,23 +1,31 @@
 ---
 title: "Sobre nosotros"
-description: "Conoce más sobre Soft Kuro Technology"
+description: "Conoce al equipo detrás de Soft Kuro Technology."
 date: 2026-01-01
 draft: false
 ---
 
-## Quiénes somos
+## Hola, somos Soft Kuro Technology
 
-**Soft Kuro Technology** es un proyecto independiente dedicado a reseñar, comparar y recomendar las mejores herramientas de software, aplicaciones SaaS y soluciones digitales para productividad y trabajo.
+Somos un equipo apasionado por la tecnología y las herramientas digitales. Nuestro objetivo es ayudarte a encontrar las mejores herramientas para tu trabajo, sin humo ni marketing engañoso.
 
-Nuestro objetivo es ayudarte a tomar decisiones informadas sobre qué herramientas digitales utilizar, basándonos en análisis honestos y experiencias reales.
+## Cómo evaluamos
 
-## Cómo funciona este sitio
+Cada herramienta que reseñamos pasa por un proceso riguroso:
 
-- **Reseñas independientes:** Analizamos cada herramienta en profundidad
-- **Comparativas honestas:** Comparamos opciones para que elijas la mejor
-- **Sin patrocinios pagados:** Nuestras recomendaciones se basan en calidad, no en comisiones
-- **Enlaces de afiliado:** Cuando compras a través de nuestros enlaces, ganamos una pequeña comisión sin coste adicional para ti
+1. **Prueba real** — Usamos la herramienta durante al menos 2 semanas en proyectos reales
+2. **Comparación** — La comparamos con alternativas similares del mercado
+3. **Análisis de precio** — Evaluamos si el precio justifica lo que ofrece
+4. **Opinión honesta** — Publicamos lo bueno y lo malo, sin filtros
 
 ## Contacto
 
-Si tienes preguntas o sugerencias, escríbenos a: **contacto@softkurotechnology.com**
+¿Tienes alguna pregunta, sugerencia o quieres colaborar? Escríbenos:
+
+- **Email:** contacto.softkuro@gmail.com
+
+## Aviso de afiliados
+
+Algunos enlaces de este sitio son enlaces de afiliado. Si compras a través de ellos, recibimos una pequeña comisión sin coste adicional para ti. Esto nos permite seguir creando contenido gratuito y honesto.
+
+Nuestras valoraciones **nunca** están influenciadas por las comisiones que recibimos.

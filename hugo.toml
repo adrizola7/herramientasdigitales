@@ -1,5 +1,6 @@
 baseURL = 'https://adrizola7.github.io/herramientasdigitales/'
-locale = 'es'
+languageCode = 'es'
+languageName = 'Español'
 title = 'Soft Kuro Technology'
 theme = 'PaperMod'
 paginate = 10
@@ -9,6 +10,7 @@ paginate = 10
   description = 'Reseñas honestas y comparativas de las mejores herramientas digitales, software SaaS y apps de productividad para potenciar tu trabajo.'
   author = 'Soft Kuro Technology'
   defaultTheme = 'dark'
+  disableThemeToggle = true
   ShowShareButtons = false
   ShowReadingTime = true
   ShowPostNavLinks = true
@@ -21,11 +23,11 @@ paginate = 10
   hidemeta = true
   hideSummary = false
   hideToc = false
-  showtoc = true
-  tocopen = true
+  showtoc = false
+  tocopen = false
   comments = false
   dateFormat = '2 de enero, 2006'
-  images = ['logo.png']
+  images = ['/images/logo-softkuro.png']
   ShowSearch = true
 
   [params.homeInfoParams]
@@ -34,7 +36,7 @@ paginate = 10
 
   [[params.socialIcons]]
     name = 'email'
-    url = 'mailto:contacto@herramientasdigitales.net'
+    url = 'mailto:contacto.softkuro@gmail.com'
 
   [params.assets]
     disableFingerprinting = true
@@ -53,7 +55,7 @@ paginate = 10
 [menu]
   [[menu.main]]
     identifier = 'herramientas'
-    name = 'Herramientas'
+    name = 'Herramientas IA'
     url = '/herramientas/'
     weight = 10
   [[menu.main]]
@@ -105,3 +107,7 @@ paginate = 10
     endLevel = 3
     ordered = false
     startLevel = 2
+
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'

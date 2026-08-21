@@ -1,0 +1,47 @@
+{{- define "main" }}
+
+{{- if not .IsHome | and .Title }}
+<div class="sk-section-header">
+  {{- partial "breadcrumbs.html" . }}
+  <h1 class="sk-section-title">{{ .Title }}</h1>
+  {{- if .Description }}
+  <p class="sk-section-desc">{{ .Description }}</p>
+  {{- end }}
+</div>
+{{- end }}
+
+{{- $pages := union .RegularPages .Sections }}
+{{- $paginator := .Paginate $pages }}
+
+<div class="sk-cards">
+{{- range $page := $paginator.Pages }}
+<a href="{{ .Permalink }}" class="sk-card">
+  <div class="sk-card-img">
+    {{- with .Params.images }}
+    <img src="{{ index . 0 }}" alt="{{ $.Title }}">
+    {{- else }}
+    <div class="sk-card-img-placeholder"></div>
+    {{- end }}
+  </div>
+  <div class="sk-card-body">
+    <h2 class="sk-card-title">{{ .Title }}</h2>
+    {{- if .Description }}
+    <p class="sk-card-desc">{{ .Description }}</p>
+    {{- end }}
+  </div>
+</a>
+{{- end }}
+</div>
+
+{{- if gt $paginator.TotalPages 1 }}
+<nav class="sk-pagination">
+  {{- if $paginator.HasPrev }}
+  <a href="{{ $paginator.Prev.URL }}">&laquo; Anterior</a>
+  {{- end }}
+  {{- if $paginator.HasNext }}
+  <a href="{{ $paginator.Next.URL }}">Siguiente &raquo;</a>
+  {{- end }}
+</nav>
+{{- end }}
+
+{{- end }}

@@ -1,57 +1,78 @@
 {{ define "main" }}
+
+<!-- ===== ANNOUNCEMENT BANNER ===== -->
+<div class="announcement-bar">
+  <span class="announcement-dot"></span>
+  <span>Guía GRATIS: Las 15 Mejores Herramientas IA para tu Negocio → <a href="#lead">Descargar</a></span>
+</div>
+
+<!-- ===== HERO ===== -->
 <article class="first-entry home-info">
   <header class="entry-header">
-    <h1>{{ .Site.Title }}</h1>
+    <h1>Soft Kuro <span class="gradient-text">Technology</span></h1>
   </header>
-  <div class="entry-content md-content">
-    <p>{{ .Site.Params.homeInfoParams.Content }}</p>
-  </div>
 </article>
 
+<!-- ===== CATEGORIES ===== -->
 <section class="home-section">
-  <h2 class="home-section-title">Categorías</h2>
+  <h2 class="home-section-title">Explora por tema</h2>
   <div class="home-categories-grid">
     <a href="/herramientas/" class="home-category-card">
-      <div class="home-category-icon">🛠️</div>
-      <div class="home-category-name">Herramientas</div>
-      <div class="home-category-desc">Reseñas de software SaaS, apps y herramientas digitales</div>
+      <div class="home-category-icon">🤖</div>
+      <div class="home-category-name">Herramientas IA</div>
+      <div class="home-category-count">{{ len (where .Site.RegularPages "Section" "herramientas") }}+ artículos</div>
     </a>
     <a href="/comparativas/" class="home-category-card">
-      <div class="home-category-icon">⚖️</div>
+      <div class="home-category-icon">📊</div>
       <div class="home-category-name">Comparativas</div>
-      <div class="home-category-desc">Comparamos opciones para que elijas la mejor</div>
+      <div class="home-category-count">{{ len (where .Site.RegularPages "Section" "comparativas") }}+ artículos</div>
     </a>
     <a href="/guias/" class="home-category-card">
-      <div class="home-category-icon">📖</div>
+      <div class="home-category-icon">📚</div>
       <div class="home-category-name">Guías</div>
-      <div class="home-category-desc">Tutoriales y guías paso a paso de productividad</div>
+      <div class="home-category-count">{{ len (where .Site.RegularPages "Section" "guias") }}+ artículos</div>
     </a>
   </div>
 </section>
 
-<section class="home-section">
+<!-- ===== LATEST ARTICLES ===== -->
+<section class="home-section" style="margin-top:60px;">
   <h2 class="home-section-title">Últimos artículos</h2>
   <div class="home-articles-grid">
-    {{ range first 4 (where .Site.RegularPages "Section" "!=" "") }}
+    {{ range first 6 (where .Site.RegularPages "Section" "in" (slice "herramientas" "comparativas" "guias")) }}
     <a href="{{ .Permalink }}" class="home-article-card">
       {{ with .Params.images }}
       <div class="home-article-image">
         <img src="{{ index . 0 }}" alt="{{ $.Title }}">
       </div>
+      {{ else }}
+      <div class="home-article-image" aria-hidden="true">📝</div>
       {{ end }}
       <div class="home-article-body">
         <div class="home-article-category">{{ with .Params.categories }}{{ index . 0 }}{{ end }}</div>
         <div class="home-article-title">{{ .Title }}</div>
         <div class="home-article-desc">{{ .Description }}</div>
+        <div class="home-article-foot">
+          <span class="home-article-link">Ver reseña →</span>
+        </div>
       </div>
     </a>
     {{ end }}
   </div>
 </section>
 
-<section class="home-cta">
-  <div class="home-cta-title">¿Necesitas ayuda para elegir?</div>
-  <div class="home-cta-desc">Explora nuestras comparativas detalladas para tomar la mejor decisión.</div>
-  <a href="/comparativas/" class="home-cta-btn">Ver comparativas →</a>
-</section>
+<!-- ===== LEAD MAGNET ===== -->
+<div class="home-section">
+  <div class="home-lead">
+    <span class="lead-badge">Descarga GRATIS</span>
+    <h2>Guía 2026: Las <span class="gradient-text">15 Mejores Herramientas IA</span> para tu Negocio</h2>
+    <p>Únete a más de 8.000 emprendedores. Recibe la guía en PDF con análisis, precios y casos de uso reales — directo en tu correo.</p>
+    <form class="lead-form" onsubmit="return false">
+      <input type="email" placeholder="tu@email.com" aria-label="Tu correo electrónico" required>
+      <button class="btn-primary" type="submit">Descargar guía gratis ↓</button>
+    </form>
+    <span class="lead-note">Sin spam. Date de baja cuando quieras.</span>
+  </div>
+</div>
+
 {{ end }}

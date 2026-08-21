@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 80" fill="none">
+  <rect width="120" height="80" rx="12" fill="#0f1117"/>
+  <rect x="20" y="25" width="35" height="25" rx="8" fill="#1e2030" stroke="#4f8cff" stroke-width="1.5"/>
+  <rect x="65" y="28" width="30" height="20" rx="6" fill="#1e2030" stroke="#4f8cff" stroke-width="1.5" opacity=".7"/>
+  <text x="60" y="72" text-anchor="middle" fill="#6b7288" font-size="7" font-family="Inter,sans-serif">WRIST REST</text>
+</svg>
