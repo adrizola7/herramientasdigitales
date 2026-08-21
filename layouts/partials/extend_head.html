@@ -5,18 +5,16 @@ document.documentElement.setAttribute('data-theme', 'dark');
 localStorage.setItem('pref-theme', 'dark');
 </script>
 <style>
-/* FORZAR DARK EN TODO - OVERRIDE TOTAL PAPERMOD */
-*, *::before, *::after {
-    background-color: #0a0a0a !important;
-    color: #fafafa !important;
-    border-color: #1a1a1a !important;
-}
+/* FORZAR DARK - SOLO EN CONTENEDORES PRINCIPALES */
 body { background: #0a0a0a !important; color: #e5e5e5 !important; }
 .header, header { background: #111111 !important; border-color: #1a1a1a !important; box-shadow: none !important; }
 .footer, footer { background: #111111 !important; border-color: #1a1a1a !important; }
 .post-entry { background: #0a0a0a !important; border-color: #1a1a1a !important; }
 .post-single { background: #0a0a0a !important; }
 .main, main { background: #0a0a0a !important; }
+.page-header { background: #0a0a0a !important; }
+.list .post-entry { border-color: #1a1a1a !important; }
+.list .post-entry:hover { background: #111111 !important; }
 .entry-header h2 a { color: #fafafa !important; }
 .entry-header h2 a:hover { color: #22c55e !important; }
 .entry-content p { color: #a3a3a3 !important; }
@@ -41,11 +39,8 @@ body { background: #0a0a0a !important; color: #e5e5e5 !important; }
 .social-icons a { color: #525252 !important; }
 .social-icons svg { stroke: #525252 !important; }
 .post-description { color: #737373 !important; }
-.page-header { background: #0a0a0a !important; }
 .page-header h1 { color: #fafafa !important; }
 .page-header .post-description { color: #737373 !important; }
-.list .post-entry { border-color: #1a1a1a !important; }
-.list .post-entry:hover { background: #111111 !important; }
 table { background: #111111 !important; border-color: #1a1a1a !important; }
 thead { background: #161616 !important; }
 th { color: #fafafa !important; border-color: #1a1a1a !important; }

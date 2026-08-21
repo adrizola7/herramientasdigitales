@@ -77,11 +77,23 @@ h1 { font-size: 2.5rem; margin-bottom: 1rem; }
 h2 { 
     font-size: 1.5rem; 
     margin: 2.5rem 0 1rem; 
-    padding-bottom: 0.75rem; 
-    border-bottom: 1px solid var(--border);
+    padding: 12px 16px; 
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: var(--radius);
     color: var(--text-primary) !important;
+    background: var(--bg-card);
 }
-h3 { font-size: 1.25rem; margin: 2rem 0 0.75rem; color: var(--text-primary) !important; }
+h3 { 
+    font-size: 1.25rem; 
+    margin: 2rem 0 0.75rem; 
+    padding: 10px 14px;
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--border-light);
+    border-radius: var(--radius);
+    color: var(--text-primary) !important;
+    background: var(--bg-card);
+}
 h4 { font-size: 1.1rem; margin: 1.5rem 0 0.5rem; color: var(--text-primary) !important; }
 
 p {
@@ -861,12 +873,13 @@ img {
     h2 {
         font-size: 1.3rem;
         margin: 2rem 0 0.75rem;
-        padding-bottom: 0.5rem;
+        padding: 10px 14px;
     }
 
     h3 {
         font-size: 1.1rem;
         margin: 1.5rem 0 0.5rem;
+        padding: 8px 12px;
     }
 
     h4 {
