@@ -14,7 +14,7 @@
 
 <head>
     {{- partial "head.html" . }}
-    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">
 </head>
 
 {{- if (or (ne .Kind `page` ) (eq .Layout `archives`) (eq .Layout `search`)) }}
