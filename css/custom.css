@@ -1,0 +1,1076 @@
+/* ============================================
+   HERRAMIENTAS DIGITALES - Dark Premium
+   Negro + Gris Oscuro | Tecnología Avanzada
+   ============================================ */
+
+/* === PALETA DARK PREMIUM === */
+:root {
+    --bg-primary: #0a0a0a;
+    --bg-secondary: #111111;
+    --bg-card: #161616;
+    --bg-elevated: #1a1a1a;
+    --bg-hover: #1f1f1f;
+    --border: #262626;
+    --border-light: #333333;
+    --text-primary: #fafafa;
+    --text-secondary: #a1a1a1;
+    --text-muted: #737373;
+    --accent: #22c55e;
+    --accent-dim: rgba(34, 197, 94, 0.15);
+    --accent-hover: #16a34a;
+    --link: #22c55e;
+    --link-hover: #4ade80;
+    --code-bg: #1a1a1a;
+    --shadow: 0 1px 3px rgba(0,0,0,0.5);
+    --shadow-md: 0 4px 12px rgba(0,0,0,0.4);
+    --shadow-lg: 0 8px 24px rgba(0,0,0,0.5);
+    --radius: 8px;
+    --radius-lg: 12px;
+}
+
+/* === RESET === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* === BODY === */
+body, html, body.list, .list {
+    background: var(--bg-primary) !important;
+    color: var(--text-primary) !important;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* === FORZAR MODO OSCURO EN TODO === */
+:root, :root[data-theme="dark"], html[data-theme="dark"], html[data-theme="auto"] {
+    --theme: var(--bg-primary) !important;
+    --entry: var(--bg-secondary) !important;
+    --primary: var(--text-primary) !important;
+    --secondary: var(--text-secondary) !important;
+    --tertiary: var(--text-muted) !important;
+    --content: var(--text-primary) !important;
+    --code-block-bg: var(--code-bg) !important;
+    --code-bg: var(--code-bg) !important;
+    --border: var(--border) !important;
+}
+
+.list, .single, .term, .page {
+    background: var(--bg-primary) !important;
+}
+
+/* === TIPOGRAFÍA === */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    letter-spacing: -0.025em;
+    line-height: 1.3;
+    color: var(--text-primary) !important;
+}
+
+h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+h2 { 
+    font-size: 1.5rem; 
+    margin: 2.5rem 0 1rem; 
+    padding: 12px 16px; 
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: var(--radius);
+    color: var(--text-primary) !important;
+    background: var(--bg-card);
+}
+h3 { 
+    font-size: 1.25rem; 
+    margin: 2rem 0 0.75rem; 
+    padding: 10px 14px;
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--border-light);
+    border-radius: var(--radius);
+    color: var(--text-primary) !important;
+    background: var(--bg-card);
+}
+h4 { font-size: 1.1rem; margin: 1.5rem 0 0.5rem; color: var(--text-primary) !important; }
+
+p {
+    margin-bottom: 1rem;
+    color: var(--text-secondary) !important;
+}
+
+strong, b {
+    color: var(--text-primary) !important;
+    font-weight: 600;
+}
+
+/* === HEADER === */
+header, .header {
+    background: var(--bg-secondary) !important;
+    border-bottom: 1px solid var(--border) !important;
+    box-shadow: none !important;
+}
+
+.header-nav, nav.header-nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    height: 64px;
+}
+
+.logo a, .logo a:visited {
+    color: var(--text-primary) !important;
+    font-weight: 700;
+    font-size: 1.15rem;
+    letter-spacing: -0.03em;
+    text-decoration: none !important;
+}
+
+.logo img {
+    height: 28px;
+    width: auto;
+    border-radius: 6px;
+}
+
+nav ul, .menu {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+
+nav a, nav a:visited, .menu a {
+    color: var(--text-muted) !important;
+    text-decoration: none !important;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+nav a:hover, nav a span.active, .menu a:hover {
+    color: var(--text-primary) !important;
+}
+
+/* === BOTÓN TEMA (OCULTAR) === */
+.theme-toggle, .logo-switches {
+    display: none !important;
+}
+
+/* === CONTENIDO PRINCIPAL === */
+.main, main.main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 48px 24px;
+    background: var(--bg-primary) !important;
+}
+
+.post-content, .entry-content, .md-content {
+    max-width: 720px;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--text-secondary) !important;
+}
+
+.post-content p, .entry-content p, .md-content p {
+    color: var(--text-secondary) !important;
+}
+
+/* === HOME === */
+.home-info, .first-entry {
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 80px 0 40px;
+    background: var(--bg-primary) !important;
+}
+
+.home-info h1, .entry-header h1 {
+    font-size: 2.75rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: var(--text-primary) !important;
+}
+
+.entry-content.md-content p {
+    font-size: 1.125rem;
+    color: var(--text-muted) !important;
+}
+
+/* === LISTA DE ARTÍCULOS === */
+.post-entry {
+    padding: 32px 0;
+    border-bottom: 1px solid var(--border) !important;
+    background: var(--bg-primary) !important;
+}
+
+.entry-header h2, .entry-hint-parent {
+    font-size: 1.35rem;
+    margin: 0 0 8px;
+    padding: 0;
+    border: none;
+}
+
+.entry-header h2 a, .entry-header h2 a:visited {
+    color: var(--text-primary) !important;
+    text-decoration: none !important;
+    transition: color 0.2s;
+}
+
+.entry-header h2 a:hover {
+    color: var(--accent) !important;
+}
+
+.entry-content p {
+    font-size: 0.95rem;
+    color: var(--text-muted) !important;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.entry-footer {
+    margin-top: 12px;
+    font-size: 0.8rem;
+    color: var(--text-muted) !important;
+}
+
+.entry-link {
+    display: none;
+}
+
+/* === CAJAS DE AFILIADO === */
+.affiliate-box {
+    background: var(--bg-card) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: var(--radius-lg);
+    padding: 24px;
+    margin: 28px 0;
+    transition: all 0.2s;
+}
+
+.affiliate-box:hover {
+    border-color: var(--border-light) !important;
+    box-shadow: var(--shadow-md);
+}
+
+.affiliate-box p:first-child {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary) !important;
+    margin-bottom: 6px;
+}
+
+.affiliate-box > p:nth-child(2) {
+    color: var(--accent) !important;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 16px;
+}
+
+.affiliate-box a, .affiliate-box a:visited {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--accent) !important;
+    color: #000000 !important;
+    padding: 10px 20px;
+    border-radius: var(--radius);
+    text-decoration: none !important;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+}
+
+.affiliate-box a:hover {
+    background: var(--accent-hover) !important;
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-md);
+}
+
+.affiliate-box a::after {
+    content: "→";
+}
+
+.affiliate-box > p:last-child {
+    font-size: 0.75rem;
+    color: var(--text-muted) !important;
+    margin-top: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 500;
+}
+
+/* === TABLAS === */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 28px 0;
+    font-size: 0.9rem;
+    border: 1px solid var(--border) !important;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+thead {
+    background: var(--bg-elevated) !important;
+    color: var(--text-primary) !important;
+}
+
+th {
+    padding: 14px 20px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-primary) !important;
+    border-bottom: 1px solid var(--border) !important;
+}
+
+td {
+    padding: 14px 20px;
+    border-bottom: 1px solid var(--border) !important;
+    color: var(--text-secondary) !important;
+}
+
+tbody tr {
+    background: var(--bg-primary) !important;
+    transition: background 0.2s;
+}
+
+tbody tr:hover {
+    background: var(--bg-hover) !important;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* === LISTAS === */
+ul, ol {
+    padding-left: 1.5rem;
+    margin: 16px 0;
+}
+
+li {
+    margin-bottom: 10px;
+    color: var(--text-secondary) !important;
+    line-height: 1.7;
+}
+
+li strong {
+    color: var(--text-primary) !important;
+}
+
+/* === CÓDIGO === */
+pre {
+    background: var(--code-bg) !important;
+    color: var(--text-secondary) !important;
+    padding: 20px 24px;
+    border-radius: var(--radius-lg);
+    overflow-x: auto;
+    font-size: 0.875rem;
+    line-height: 1.7;
+    margin: 24px 0;
+    border: 1px solid var(--border) !important;
+}
+
+code {
+    background: var(--bg-elevated) !important;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.875em;
+    color: var(--accent) !important;
+    font-weight: 500;
+}
+
+pre code {
+    background: none !important;
+    padding: 0;
+    color: inherit !important;
+    font-weight: 400;
+}
+
+/* === BLOCKQUOTES === */
+blockquote {
+    border-left: 3px solid var(--accent) !important;
+    background: var(--bg-card) !important;
+    padding: 16px 20px;
+    margin: 24px 0;
+    border-radius: 0 var(--radius) var(--radius) 0;
+    color: var(--text-secondary) !important;
+}
+
+/* === ENLACES === */
+a, a:visited {
+    color: var(--link) !important;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: var(--link-hover) !important;
+}
+
+/* === SEPARADORES === */
+hr {
+    border: none;
+    height: 1px;
+    background: var(--border) !important;
+    margin: 40px 0;
+}
+
+/* === IMÁGENES === */
+img {
+    border-radius: var(--radius-lg);
+    max-width: 100%;
+    height: auto;
+}
+
+/* === BREADCRUMBS === */
+.breadcrumbs, .breadcrumbs a, nav.breadcrumbs {
+    color: var(--text-muted) !important;
+}
+
+.breadcrumbs svg {
+    stroke: var(--text-muted) !important;
+}
+
+/* === TOC === */
+.toc {
+    background: var(--bg-card) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: var(--radius-lg);
+    padding: 20px;
+}
+
+.toc-title, .toc a, .toc li {
+    color: var(--text-secondary) !important;
+}
+
+.toc a:hover {
+    color: var(--accent) !important;
+}
+
+/* === FOOTER === */
+.footer, footer.footer {
+    border-top: 1px solid var(--border) !important;
+    padding: 40px 24px;
+    text-align: center;
+    background: var(--bg-secondary) !important;
+}
+
+.footer p {
+    font-size: 0.85rem;
+    color: var(--text-muted) !important;
+    margin-bottom: 8px;
+}
+
+.footer a, .footer a:visited {
+    color: var(--text-muted) !important;
+    margin: 0 12px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.footer a:hover {
+    color: var(--text-primary) !important;
+}
+
+/* === SOCIAL ICONS === */
+.social-icons a, .social-icons a:visited {
+    color: var(--text-muted) !important;
+}
+
+.social-icons a:hover {
+    color: var(--accent) !important;
+}
+
+.social-icons svg {
+    stroke: var(--text-muted) !important;
+}
+
+/* === PAGINACIÓN === */
+.page-navigation, .pagination {
+    background: var(--bg-primary) !important;
+}
+
+.page-navigation a, .pagination a, .page-navigation span, .pagination span {
+    color: var(--text-muted) !important;
+    background: var(--bg-card) !important;
+    border: 1px solid var(--border) !important;
+}
+
+.page-navigation a:hover, .pagination a:hover {
+    border-color: var(--accent) !important;
+    color: var(--accent) !important;
+}
+
+/* === POST NAV === */
+.post-navigation {
+    background: var(--bg-primary) !important;
+}
+
+.post-navigation a {
+    color: var(--text-secondary) !important;
+}
+
+/* === HOMEPAGE: SECCIONES === */
+.home-section {
+    max-width: 1000px;
+    margin: 60px auto 0;
+    padding: 0 24px;
+}
+
+.home-section-title {
+    color: var(--text-primary);
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 24px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border);
+}
+
+/* === HOMEPAGE: CATEGORÍAS === */
+.home-categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+}
+
+.home-category-card {
+    display: block;
+    padding: 24px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    text-decoration: none !important;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.home-category-card:hover {
+    border-color: var(--border-light);
+    box-shadow: var(--shadow-md);
+}
+
+.home-category-icon {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+}
+
+.home-category-name {
+    color: var(--text-primary);
+    font-weight: 600;
+    font-size: 1.05rem;
+    margin-bottom: 4px;
+}
+
+.home-category-desc {
+    color: var(--text-muted);
+    font-size: 0.875rem;
+}
+
+/* === HOMEPAGE: ARTÍCULOS === */
+.home-articles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.home-article-card {
+    display: block;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    text-decoration: none !important;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.home-article-card:hover {
+    border-color: var(--border-light);
+    box-shadow: var(--shadow-md);
+}
+
+.home-article-image {
+    height: 160px;
+    overflow: hidden;
+}
+
+.home-article-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+.home-article-body {
+    padding: 20px;
+}
+
+.home-article-category {
+    color: var(--accent);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 8px;
+}
+
+.home-article-title {
+    color: var(--text-primary);
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.home-article-desc {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* === HOMEPAGE: CTA === */
+.home-cta {
+    max-width: 1000px;
+    margin: 60px auto 40px;
+    padding: 32px 24px;
+    background: linear-gradient(135deg, #111111, #1a1a1a);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    box-shadow: var(--shadow-md);
+}
+
+.home-cta-title {
+    color: var(--text-primary);
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.home-cta-desc {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-bottom: 16px;
+}
+
+.home-cta-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: var(--accent);
+    color: #000 !important;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: var(--radius);
+    text-decoration: none !important;
+    transition: background 0.2s;
+}
+
+.home-cta-btn:hover {
+    background: var(--accent-hover);
+}
+
+/* === BOTÓN HAMBURGUESA === */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    z-index: 1001;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.menu-toggle svg {
+    stroke: var(--text-primary);
+    display: block;
+}
+
+.menu-icon-close {
+    display: none;
+}
+
+.menu-toggle.active .menu-icon-open {
+    display: none;
+}
+
+.menu-toggle.active .menu-icon-close {
+    display: block;
+}
+
+/* === SCROLLBAR === */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--bg-primary); }
+::-webkit-scrollbar-thumb { background: var(--border-light); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
+
+/* === SELECCIÓN DE TEXTO === */
+::selection {
+    background: var(--accent-dim);
+    color: var(--text-primary);
+}
+
+/* ============================================
+   MOBILE - Optimización completa
+   ============================================ */
+
+/* --- HEADER MOBILE --- */
+@media (max-width: 768px) {
+    .header-nav {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 12px 16px;
+    }
+
+    .logo {
+        flex: 1;
+    }
+
+    .menu-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: var(--bg-secondary);
+        border-top: 1px solid var(--border);
+        padding: 8px 0;
+        margin-top: 12px;
+        gap: 0;
+        overflow-x: visible;
+        white-space: normal;
+    }
+
+    .menu.menu-open {
+        display: flex;
+    }
+
+    .menu li {
+        width: 100%;
+    }
+
+    .menu li a {
+        display: flex;
+        align-items: center;
+        min-height: 48px;
+        padding: 14px 20px;
+        font-size: 1rem;
+        color: var(--text-secondary) !important;
+        border-bottom: 1px solid var(--border);
+        transition: background 0.15s, color 0.15s;
+    }
+
+    .menu li:last-child a {
+        border-bottom: none;
+    }
+
+    .menu li a:active {
+        background: var(--bg-hover);
+    }
+
+    .menu li a span.active {
+        color: var(--accent) !important;
+        font-weight: 600;
+    }
+
+    /* --- HOMEPOAGE MOBILE --- */
+    .home-info, .first-entry {
+        padding: 40px 0 20px;
+    }
+
+    .home-info h1, .entry-header h1 {
+        font-size: 1.75rem;
+    }
+
+    .entry-content.md-content p {
+        font-size: 1rem;
+    }
+
+    /* --- CATEGORÍAS GRID --- */
+    .home-categories-grid {
+        grid-template-columns: 1fr !important;
+        gap: 12px !important;
+    }
+
+    .home-category-card {
+        padding: 20px !important;
+    }
+
+    /* --- ARTÍCULOS GRID --- */
+    .home-articles-grid {
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+    }
+
+    .home-article-image {
+        height: 120px !important;
+    }
+
+    .home-article-body {
+        padding: 16px !important;
+    }
+
+    .home-article-title {
+        font-size: 0.95rem !important;
+    }
+
+    .home-article-desc {
+        font-size: 0.8rem !important;
+    }
+
+    /* --- CTA MOBILE --- */
+    .home-cta {
+        padding: 24px 16px !important;
+        margin: 40px 16px !important;
+    }
+
+    .home-cta-title {
+        font-size: 1rem !important;
+    }
+
+    .home-cta-desc {
+        font-size: 0.85rem !important;
+    }
+
+    /* --- SECCIONES MOBILE --- */
+    .home-section {
+        margin: 40px 16px 0 !important;
+        padding: 0 !important;
+    }
+
+    .home-section-title {
+        font-size: 1.1rem !important;
+        margin-bottom: 16px !important;
+    }
+
+    /* --- CONTENIDO MOBILE --- */
+    .main, main.main {
+        padding: 24px 16px;
+    }
+
+    .post-content, .entry-content, .md-content {
+        max-width: 100%;
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+        margin-bottom: 0.75rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+        margin: 2rem 0 0.75rem;
+        padding: 10px 14px;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+        margin: 1.5rem 0 0.5rem;
+        padding: 8px 12px;
+    }
+
+    h4 {
+        font-size: 1rem;
+        margin: 1.25rem 0 0.5rem;
+    }
+
+    p {
+        margin-bottom: 0.85rem;
+    }
+
+    /* --- BLOCKQUOTES MOBILE --- */
+    blockquote {
+        padding: 12px 16px;
+        margin: 16px 0;
+    }
+
+    /* --- LISTAS MOBILE --- */
+    ul, ol {
+        padding-left: 1.25rem;
+        margin: 12px 0;
+    }
+
+    li {
+        margin-bottom: 8px;
+        line-height: 1.6;
+    }
+
+    /* --- CÓDIGO MOBILE --- */
+    pre {
+        padding: 16px;
+        margin: 16px 0;
+        font-size: 0.8rem;
+        border-radius: var(--radius);
+    }
+
+    code {
+        font-size: 0.8em;
+    }
+
+    /* --- TABLAS MOBILE --- */
+    .table-responsive {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        margin: 16px 0;
+        border-radius: var(--radius);
+        border: 1px solid var(--border);
+    }
+
+    table {
+        min-width: 500px;
+        font-size: 0.8rem;
+        margin: 0;
+    }
+
+    th {
+        padding: 10px 14px;
+        font-size: 0.7rem;
+    }
+
+    td {
+        padding: 10px 14px;
+        font-size: 0.8rem;
+    }
+
+    /* --- AFILIADO MOBILE --- */
+    .affiliate-box {
+        padding: 20px 16px;
+        margin: 20px 0;
+    }
+
+    .affiliate-box p:first-child {
+        font-size: 1rem;
+    }
+
+    .affiliate-box a, .affiliate-box a:visited {
+        width: 100%;
+        justify-content: center;
+        padding: 14px 20px;
+        font-size: 1rem;
+    }
+
+    /* --- TOC MOBILE --- */
+    details.toc {
+        margin: 16px 0;
+    }
+
+    details.toc summary {
+        padding: 12px 16px;
+        font-size: 0.9rem;
+    }
+
+    details .inner {
+        margin: 0 16px;
+        padding-bottom: 12px;
+    }
+
+    /* --- BREADCRUMBS MOBILE --- */
+    .breadcrumbs {
+        font-size: 0.8rem;
+    }
+
+    .breadcrumbs a {
+        font-size: 0.85rem;
+    }
+
+    /* --- POST NAV MOBILE --- */
+    .paginav {
+        flex-direction: column;
+    }
+
+    .paginav a {
+        width: 100%;
+        padding: 12px 16px;
+    }
+
+    .paginav .next {
+        text-align: left;
+    }
+
+    /* --- POST TAGS MOBILE --- */
+    .post-tags {
+        gap: 8px;
+    }
+
+    .post-tags a {
+        padding: 0 12px;
+        line-height: 32px;
+        font-size: 0.8rem;
+    }
+
+    /* --- FOOTER MOBILE --- */
+    .footer, footer.footer {
+        padding: 32px 16px;
+        padding-bottom: calc(32px + env(safe-area-inset-bottom, 0px));
+    }
+
+    .footer p {
+        font-size: 0.8rem;
+    }
+
+    .footer p:nth-child(2) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4px 8px;
+    }
+
+    .footer a, .footer a:visited {
+        margin: 0 4px;
+        font-size: 0.8rem;
+    }
+
+    /* --- SEARCH MOBILE --- */
+    .searchbox input {
+        padding: 12px 14px;
+        font-size: 1rem;
+        border-radius: var(--radius);
+    }
+
+    .searchResults li {
+        padding: 12px 14px;
+        font-size: 0.9rem;
+    }
+
+    /* --- SAFE AREAS (iPhones) --- */
+    header {
+        padding-top: env(safe-area-inset-top, 0px);
+    }
+
+    body {
+        padding-bottom: env(safe-area-inset-bottom, 0px);
+    }
+}
+
+/* --- TABLET (entre 769px y 1024px) --- */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .main, main.main {
+        padding: 36px 20px;
+    }
+
+    .home-info h1, .entry-header h1 {
+        font-size: 2.25rem;
+    }
+
+    .home-categories-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .home-articles-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
