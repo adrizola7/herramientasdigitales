@@ -5,7 +5,7 @@ date: 2026-08-15
 draft: false
 categories: ["Guías"]
 tags: ["productividad", "organización", "guía", "herramientas digitales"]
-images: ["/images/organizar-trabajo.svg"]
+images: ["images/organizar-trabajo.svg"]
 ---
 
 > **Divulgación:** Este artículo contiene enlaces de afiliado. Si compras a través de ellos, recibimos una pequeña comisión **sin coste adicional** para ti.

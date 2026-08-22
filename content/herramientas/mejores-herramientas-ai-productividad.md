@@ -5,7 +5,7 @@ date: 2026-08-20
 draft: false
 categories: ["Herramientas"]
 tags: ["AI", "productividad", "herramientas digitales", "software"]
-images: ["/images/herramientas-ai.svg"]
+images: ["images/herramientas-ai.svg"]
 ---
 
 > **Divulgación:** Este artículo contiene enlaces de afiliado. Si compras a través de ellos, recibimos una pequeña comisión **sin coste adicional** para ti.

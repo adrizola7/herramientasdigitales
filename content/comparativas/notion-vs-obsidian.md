@@ -5,7 +5,7 @@ date: 2026-08-18
 draft: false
 categories: ["Comparativas"]
 tags: ["Notion", "Obsidian", "comparativa", "productividad"]
-images: ["/images/notion-vs-obsidian.svg"]
+images: ["images/notion-vs-obsidian.svg"]
 ---
 
 > **Divulgación:** Este artículo contiene enlaces de afiliado. Si compras a través de ellos, recibimos una pequeña comisión **sin coste adicional** para ti.

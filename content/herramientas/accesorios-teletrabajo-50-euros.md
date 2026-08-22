@@ -5,7 +5,7 @@ date: 2026-08-20
 draft: false
 categories: ["Herramientas"]
 tags: ["teletrabajo", "oficina", "accesorios", "baratos"]
-images: ["/images/accesorios-teletrabajo.svg"]
+images: ["images/accesorios-teletrabajo.svg"]
 ---
 
 > **Divulgación:** Este artículo contiene enlaces de afiliado de Amazon. Si compras a través de ellos, recibimos una pequeña comisión **sin coste adicional** para ti.

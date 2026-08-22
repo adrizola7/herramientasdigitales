@@ -1,6 +1,7 @@
 baseURL = 'https://adrizola7.github.io/herramientasdigitales/'
 languageCode = 'es'
 languageName = 'Español'
+locale = 'es'
 title = 'Soft Kuro Technology'
 theme = 'PaperMod'
 paginate = 10
@@ -27,7 +28,7 @@ paginate = 10
   tocopen = false
   comments = false
   dateFormat = '2 de enero, 2006'
-  images = ['/images/logo-softkuro.png']
+  images = ['images/logo-softkuro.png']
   ShowSearch = true
 
   [params.homeInfoParams]
@@ -40,7 +41,7 @@ paginate = 10
 
   [params.assets]
     disableFingerprinting = true
-    favicon = '/favicon.svg'
+    favicon = 'favicon.svg'
     customCSS = ['/css/custom.css']
 
   [params.label]
