@@ -17,17 +17,17 @@
 <section class="home-section">
   <h2 class="home-section-title">Explora por tema</h2>
   <div class="home-categories-grid">
-    <a href="/herramientas/" class="home-category-card">
+    <a href="{{ "herramientas/" | relURL }}" class="home-category-card">
       <div class="home-category-icon">🤖</div>
       <div class="home-category-name">Herramientas IA</div>
       <div class="home-category-count">{{ len (where .Site.RegularPages "Section" "herramientas") }}+ artículos</div>
     </a>
-    <a href="/comparativas/" class="home-category-card">
+    <a href="{{ "comparativas/" | relURL }}" class="home-category-card">
       <div class="home-category-icon">📊</div>
       <div class="home-category-name">Comparativas</div>
       <div class="home-category-count">{{ len (where .Site.RegularPages "Section" "comparativas") }}+ artículos</div>
     </a>
-    <a href="/guias/" class="home-category-card">
+    <a href="{{ "guias/" | relURL }}" class="home-category-card">
       <div class="home-category-icon">📚</div>
       <div class="home-category-name">Guías</div>
       <div class="home-category-count">{{ len (where .Site.RegularPages "Section" "guias") }}+ artículos</div>
